@@ -1,4 +1,11 @@
-node_modules/
-.idea/
-compressed/
+# Project
+target/
+logs/
 
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Eclipse
+.classpath
+.project
