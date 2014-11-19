@@ -207,8 +207,11 @@ Ext.onReady(function () {
                 handler: function () {
                     production = genericFormPanel.down("#productionName").value;
                     if (production && production.trim().length > 0) {
-                        components = JSON.parse(localStorage.getItem("components-" + production));
-                        componentStore.loadData(components);
+                        var json = localStorage.getItem("components-" + production);
+                        if (json && json.trim().length > 0) {
+                            components = JSON.parse(json);
+                            componentStore.loadData(components);
+                        }
                         componentGridPanel.down("#addComponent").setDisabled(false);
                         componentGridPanel.down("#generateJson").setDisabled(false);
                         genericFormPanel.down("#productionName").setReadOnly(true);
