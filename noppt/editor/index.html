@@ -9,23 +9,29 @@
             width: 1200px;
             margin: 50px auto 0 auto;
         }
-        .component-add {
+        .button-add {
             background-image: url("libs/packages/icons/add.png");
         }
-        .component-remove {
+        .button-remove {
             background-image: url("libs/packages/icons/cross.gif");
         }
         .generate {
             background-image: url("libs/packages/icons/application_go.png");
         }
         .editor-section { margin: 20px 0; }
+        .float-left {
+            float: left;
+        }
     </style>
 </head>
 <body>
 <main id="main">
     <section id="genericSection" class="editor-section"></section>
     <section id="componentSection" class="editor-section"></section>
-    <section id="keyframeSection" class="editor-section"></section>
+    <section id="keyframeSection" class="editor-section x-clear">
+        <div id="keyframePane" class="float-left"></div>
+        <div id="changePane" class="float-left"></div>
+    </section>
 </main>
 <script type="text/javascript" src="libs/ext-all.js"></script>
 <script type="text/javascript" src="libs/packages/ext-theme-crisp/build/ext-theme-crisp.js"></script>
