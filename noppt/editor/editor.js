@@ -333,7 +333,7 @@ Ext.onReady(function () {
 
                     componentGridPanel.down("#addComponent").setDisabled(true);
                     componentGridPanel.down("#generateJson").setDisabled(true);
-                    keyframeGridPanel.down("#keyframeComponent").setDisabled(true);
+                    keyframeGridPanel.down("#addKeyframe").setDisabled(true);
 
                     genericFormPanel.down("#productionName").setReadOnly(false);
                     genericFormPanel.down("#disconnectProduction").hide();
@@ -539,6 +539,7 @@ Ext.onReady(function () {
                     if (componentStore.getCount() > 0) {
                         sm.select(0);
                     }
+                    saveComponents();
                 }
             },
             {
@@ -738,6 +739,7 @@ Ext.onReady(function () {
                     if (keyframeStore.getCount() > 0) {
                         sm.select(0);
                     }
+                    saveKeyframes();
                 }
             }
         ],
@@ -928,6 +930,12 @@ Ext.onReady(function () {
                     if (changeStore.getCount() > 0) {
                         sm.select(0);
                     }
+
+                    currentKeyframe.components = [];
+                    for (var i = 0; i < changeStore.data.items.length; i++) {
+                        currentKeyframe.components.push(changeStore.data.items[i].data);
+                    }
+                    saveKeyframes();
                 }
             }
         ],
