@@ -115,7 +115,7 @@ Ext.onReady(function () {
                     name: "pos_x",
                     persist: false,
                     convert: function (value, record) {
-                        if (value) {
+                        if (value != null) {
                             record.data.position.x = value;
                         }
                         return record.data.position.x;
@@ -125,7 +125,7 @@ Ext.onReady(function () {
                     name: "pos_y",
                     persist: false,
                     convert: function (value, record) {
-                        if (value) {
+                        if (value != null) {
                             record.data.position.y = value;
                         }
                         return record.data.position.y;
@@ -135,7 +135,7 @@ Ext.onReady(function () {
                     name: "pos_z",
                     persist: false,
                     convert: function (value, record) {
-                        if (value) {
+                        if (value != null) {
                             record.data.position.z = value;
                         }
                         return record.data.position.z;
@@ -145,7 +145,7 @@ Ext.onReady(function () {
                     name: "rot_x",
                     persist: false,
                     convert: function (value, record) {
-                        if (value) {
+                        if (value != null) {
                             record.data.rotation.x = value;
                         }
                         return record.data.rotation.x;
@@ -155,7 +155,7 @@ Ext.onReady(function () {
                     name: "rot_y",
                     persist: false,
                     convert: function (value, record) {
-                        if (value) {
+                        if (value != null) {
                             record.data.rotation.y = value;
                         }
                         return record.data.rotation.y;
@@ -165,7 +165,7 @@ Ext.onReady(function () {
                     name: "rot_z",
                     persist: false,
                     convert: function (value, record) {
-                        if (value) {
+                        if (value != null) {
                             record.data.rotation.z = value;
                         }
                         return record.data.rotation.z;
@@ -211,7 +211,7 @@ Ext.onReady(function () {
                     name: "camera_pos_x",
                     persist: false,
                     convert: function (value, record) {
-                        if (value) {
+                        if (value != null) {
                             record.data.camera.position.x = value;
                         }
                         return record.data.camera.position.x;
@@ -221,7 +221,7 @@ Ext.onReady(function () {
                     name: "camera_pos_y",
                     persist: false,
                     convert: function (value, record) {
-                        if (value) {
+                        if (value != null) {
                             record.data.camera.position.y = value;
                         }
                         return record.data.camera.position.y;
@@ -231,7 +231,7 @@ Ext.onReady(function () {
                     name: "camera_pos_z",
                     persist: false,
                     convert: function (value, record) {
-                        if (value) {
+                        if (value != null) {
                             record.data.camera.position.z = value;
                         }
                         return record.data.camera.position.z;
@@ -241,7 +241,7 @@ Ext.onReady(function () {
                     name: "camera_rot_x",
                     persist: false,
                     convert: function (value, record) {
-                        if (value) {
+                        if (value != null) {
                             record.data.camera.rotation.x = value;
                         }
                         return record.data.camera.rotation.x;
@@ -251,7 +251,7 @@ Ext.onReady(function () {
                     name: "camera_rot_y",
                     persist: false,
                     convert: function (value, record) {
-                        if (value) {
+                        if (value != null) {
                             record.data.camera.rotation.y = value;
                         }
                         return record.data.camera.rotation.y;
@@ -261,7 +261,7 @@ Ext.onReady(function () {
                     name: "camera_rot_z",
                     persist: false,
                     convert: function (value, record) {
-                        if (value) {
+                        if (value != null) {
                             record.data.camera.rotation.z = value;
                         }
                         return record.data.camera.rotation.z;
